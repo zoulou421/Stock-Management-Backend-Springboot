@@ -23,11 +23,19 @@ public class StockManagementBackSpringbootApplication implements CommandLineRunn
     @Override
     public void run(String... args) throws Exception {
         Cas cas = new Cas();
-        cas.setVille("Test ville");
-        cas.setQuartier("Test quartier");
+        cas.setVille("Dakar");
+        cas.setQuartier("Liberte 6 extension");
 
         Date date = null;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        date = sdf.parse("2020-04-28");
+        cas.setDate(date);
+
+        cas.setVille("Dakar Sacré Coeur");
+        cas.setQuartier("Test quartier");
+
+        Date date1 = null;
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
         date = sdf.parse("2020-04-28");
         cas.setDate(date);
 
